@@ -7,6 +7,10 @@ input[type="text"], input[type="number"] {
   margin: 20px 0;
 }
 
+.line {
+  cursor: pointer;
+}
+
 figure {
   margin: 20px auto;
 }

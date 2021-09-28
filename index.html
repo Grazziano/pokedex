@@ -17,10 +17,10 @@
 
       <form action="">
         <div class="column">
-          <input class="input is-rounded" type="text" placeholder="Nome do pokemon" id="name">
-          <input class="input is-rounded" type="number" placeholder="Level" id="level">
-          <input class="input is-rounded" type="number" placeholder="Ataque" id="attack">
-          <input class="input is-rounded" type="number" placeholder="Defesa" id="defense">
+          <input class="input is-rounded" type="text" placeholder="Nome do pokemon" id="name" required>
+          <input class="input is-rounded" type="number" placeholder="Level" id="level" min="1" max="50" required>
+          <input class="input is-rounded" type="number" placeholder="Ataque" id="attack" min="1" max="345" required>
+          <input class="input is-rounded" type="number" placeholder="Defesa" id="defense" min="1" max="400" required>
         </div>
 
         <div class="column">
@@ -50,6 +50,7 @@
     </table>
   </div>
 
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

@@ -14,20 +14,40 @@
 
   <div class="container">
     <div class="columns">
-      <div class="column">
-        <input class="input is-rounded" type="text" placeholder="Nome do pokemon" id="name">
-        <input class="input is-rounded" type="text" placeholder="Level" id="level">
-      </div>
-      <div class="column">
-        <input class="input is-rounded" type="text" placeholder="Ataque" id="attack">
-        <input class="input is-rounded" type="text" placeholder="Defesa" id="defense">
-      </div>
+
+      <form action="">
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="Nome do pokemon" id="name">
+          <input class="input is-rounded" type="number" placeholder="Level" id="level">
+          <input class="input is-rounded" type="number" placeholder="Ataque" id="attack">
+          <input class="input is-rounded" type="number" placeholder="Defesa" id="defense">
+        </div>
+
+        <div class="column">
+          <button class="button is-success is-rounded" id="save">Salvar</button>
+        </div>
+      </form>
+
       <div class="column  is-two-fifths">
         <figure class="image is-128x128">
           <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
         </figure>
       </div>
+
     </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Pokemon</th>
+          <th>Level</th>
+          <th>Ataque</th>
+          <th>Defesa</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
   </div>
 
   <script src="./js/script.js"></script>
